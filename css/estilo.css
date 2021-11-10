@@ -1,0 +1,57 @@
+/* All document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+
+h1 {
+    text-align: center;
+    margin: 20px 0px 40px;
+}
+
+/* Form content */
+
+.container-fluid {
+    align-items: center;
+    height: auto;
+    width: 80vw;
+    background-color: aquamarine;
+}
+
+/* Campos do form */
+label {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-size: x-small;
+    margin-left: 25px;
+    color:rgb(236, 10, 10);
+}
+
+.label-checkbox {
+    display: inline;
+}
+
+#ddd {
+    width: 10vw;
+}
+
+input[type=text],
+input[type=email] {
+    margin-left: 25px;
+    height: 2.4em;
+    width: 68%;
+    border-radius: 4px;
+    background-color: rgb(231, 228, 228);
+    border: 0;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+input[type=checkbox] {
+    display: block;
+}
