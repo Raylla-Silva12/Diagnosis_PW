@@ -1,23 +1,40 @@
 /* All document */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Título */
+/* Título e Subtítulo */
 
 h1 {
     text-align: center;
     margin: 20px 0px 40px;
 }
 
+h2 {
+    margin: 25px;
+}
+
 /* Form content */
 
 .container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    height: auto;
-    width: 50vw;
-    background-color: rgb(189, 192, 191);
+}
+
+.col-md-10 {
+    padding: 10px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+#contato {
+    float: left;
 }
 
 .caixinha {
@@ -25,30 +42,24 @@ h1 {
 }
 
 /* Campos do form */
+
 label {
     display: block;
     margin-bottom: 0.9rem;
     font-size: medium;
     margin-left: 25px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
-.label-checkbox {
-   display: inline-block;
+.label-checkbox, .label-radio {
+    display: inline-block;
 }
 
 #ddd {
     width: 5vw !important;
-    margin-left: 13.5px !important;
-    border: 0 !important;
-    padding: 10px !important;
 }
 
-#ddd,
-input[type=tel],
-input[type=password],
-input[type=text],
-input[type=email] {
+#ddd, select, input[type=tel], input[type=password], input[type=text], input[type=email] {
     margin-left: 25px;
     height: 2.4em;
     width: 20vw;
@@ -62,8 +73,10 @@ input[type=email] {
 
 input[type=tel] {
     margin-left: -2px;
+    display: inline;
 }
 
-input[type=checkbox] {
+input[type=checkbox],
+input[type=radio] {
     display: inline-block;
 }

@@ -17,67 +17,71 @@
 
     <form action="php/dados.php" method="GET">
         <div class="container-fluid">
-            <h1>Dados - Imobiliária</h1>
+            <div class="col-md-10 bg-secondary">
 
-            <div class="row">
+                <!-- Conteúdo -->
+
+                <h1>Dados - Imobiliária</h1>
+
                 <input id="nome" name="nome" type="text" required>
                 <label for="nome">Nome</label>
-                <br>
+
                 <input id="email" name="email" type="email" required>
                 <label for="email">E-mail</label>
-                <br>
+
                 <input id="senha" name="senha" type="password" required>
                 <label for="senha">Senha</label>
-                <br>
 
-                <div class="col-2">
+
+                <div id="contato">
                     <input id="ddd" name="ddd" type="tel" required>
                     <label for="ddd">DDD</label>
                 </div>
 
-                <div class="col-10">
-                    <input id="telefone" name="telefone" type="tel" required>
-                    <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" required>
+                <label for="telefone">Telefone</label>
+
+                <!-- Tipo de Contato -->
+
+                <h2>Tipo de Contato</h2>
+
+                <div class="caixinha">
+                    <input type="checkbox" name="tipo[]" value="Fixo" id="fixo">
+                    <label for="fixo" class="label-checkbox">Fixo</label>
                 </div>
 
-            </div>
-            <br>
-            <h2>Tipo de Contato</h2>
+                <div class="caixinha">
+                    <input type="checkbox" name="tipo[]" value="Celular" id="celular">
+                    <label for="celular" class="label-checkbox">Celular</label>
+                </div>
 
-            <div class="caixinha">
-                <input type="checkbox" name="tipo[]" value="Fixo" id="fixo">
-                <label for="fixo" class="label-checkbox">Fixo</label>
-            </div>
+                <div class="caixinha">
+                    <input type="checkbox" name="tipo[]" value="Whatsapp" id="whatsapp" checked>
+                    <label for="whatsapp" class="label-checkbox">Whatsapp</label>
+                </div>
 
-            <div class="caixinha">
-                <input type="checkbox" name="tipo[]" value="Celular" id="celular">
-                <label for="celular" class="label-checkbox">Celular</label>
-            </div>
+                <!-- Especificação da Compra -->
 
-            <div class="caixinha">
-                <input type="checkbox" name="tipo[]" value="Whatsapp" id="whatsapp" checked>
-                <label for="whatsapp" class="label-checkbox">Whatsapp</label>
-            </div>
-            <br>
-            <br>
-            <div class="col-md-6">
-                
-            </div>
-            <br>
-            <div class="col-md-12">
+                <h2>Especificação da Compra</h2>
 
-                <h2>Especificação de Compra</h2>
+                <div class="caixinha">
+                    <input type="radio" name="selecao" value="Comprar" id="comprar" checked>
+                    <label for="comprar" class="label-radio">Comprar</label>
+                </div>
 
-                <input type="radio" name="selecao" value="Comprar" id="comprar" checked>
-                <label for="comprar">Comprar</label>
+                <div class="caixinha">
+                    <input type="radio" name="selecao" value="Alugar Temporada" id="alugarT">
+                    <label for="alugarT" class="label-radio">Alugar Temporada</label>
+                </div>
 
-                <input type="radio" name="selecao" value="Alugar Temporada" id="alugarT">
-                <label for="alugarT">Alugar Temporada</label>
+                <div class="caixinha">
+                    <input type="radio" name="selecao" value="Alugar Definitivo" id="alugarD">
+                    <label for="alugarD" class="label-radio">Alugar Definitivo</label>
+                </div>
 
-                <input type="radio" name="selecao" value="Alugar Definitivo" id="alugarD">
-                <label for="alugarD">Alugar Definitivo</label>
-                <br>
-                <h2>Tipo Imóvel</h2>
+                <!-- Tipo do Imóvel -->
+
+                <h2>Tipo do Imóvel</h2>
                 <select name="select" id="select">
                     <option value="Casa">Casa</option>
                     <option value="Sobrado">Sobrado</option>
@@ -85,11 +89,15 @@
                     <option value="Terreno">Terreno</option>
                     <option value="Salão Comercial">Salão Comercial</option>
                 </select>
-            </div>
 
-            <div class="col-md-6">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
+                <!-- Botões -->
+
+                <div class="button mt-5">
+                    <button class="btn btn-block bg-danger" type="submit" value="Enviar">Enviar</button>
+                    <button class="btn btn-block bg-danger" type="reset" value="Enviar">Limpar</button>
+                </div>
+
+
             </div>
         </div>
     </form>
