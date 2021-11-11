@@ -10,14 +10,14 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Formulario</title>
+    <title>Formulário</title>
 </head>
 
 <body>
 
     <form action="php/dados.php" method="GET">
         <div class="container-fluid">
-            <h1>Formulario Imobiliaria</h1> 
+            <h1>Dados - Imobiliária</h1>
 
             <div class="row">
                 <input id="nome" name="nome" type="text" required>
@@ -39,16 +39,22 @@
 
             </div>
             <br>
-            <label for="tipo">Tipo: </label>
+            <h2>Tipo de Contato</h2>
 
-            <input type="checkbox" name="tipo[]" value="Fixo" id="fixo">
-            <label for="fixo" class="label-checkbox">Fixo: </label>
+            <div class="caixinha">
+                <input type="checkbox" name="tipo[]" value="Fixo" id="fixo">
+                <label for="fixo" class="label-checkbox">Fixo: </label>
+            </div>
 
-            <input type="checkbox" name="tipo[]" value="Celular" id="celular">
-            <label for="celular" class="label-checkbox">Celular: </label>
+            <div class="caixinha">
+                <input type="checkbox" name="tipo[]" value="Celular" id="celular">
+                <label for="celular" class="label-checkbox">Celular: </label>
+            </div>
 
-            <input type="checkbox" name="tipo[]" value="Whatsapp" id="whatsapp" checked>
-            <label for="whatsapp" class="label-checkbox">Whatsapp: </label>
+            <div class="caixinha">
+                <input type="checkbox" name="tipo[]" value="Whatsapp" id="whatsapp" checked>
+                <label for="whatsapp" class="label-checkbox">Whatsapp: </label>
+            </div>
             <br>
             <br>
             <div class="col-md-6">
@@ -58,7 +64,7 @@
             <br>
             <div class="col-md-12">
 
-                <label for="deseja">Deseja</label>
+                <h2>Especificação de Compra</h2>
 
                 <input type="radio" name="selecao" value="Comprar" id="comprar" checked>
                 <label for="comprar">Comprar: </label>
@@ -69,7 +75,7 @@
                 <input type="radio" name="selecao" value="Alugar Definitivo" id="alugarD">
                 <label for="alugarD">Alugar Definitivo: </label>
                 <br>
-                <label for="select">Tipo: </label>
+                <h2>Tipo Imóvel</h2>
                 <select name="select" id="select">
                     <option value="Casa">Casa</option>
                     <option value="Sobrado">Sobrado</option>

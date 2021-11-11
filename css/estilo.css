@@ -16,32 +16,37 @@ h1 {
 .container-fluid {
     align-items: center;
     height: auto;
-    width: 80vw;
-    background-color: aquamarine;
+    width: 50vw;
+    background-color: rgb(189, 192, 191);
 }
 
 /* Campos do form */
 label {
     display: block;
     margin-bottom: 0.9rem;
-    font-size: x-small;
+    font-size: medium;
     margin-left: 25px;
-    color:rgb(236, 10, 10);
+    color:rgb(0, 0, 0);
 }
 
 .label-checkbox {
-    display: inline;
+   display: inline-block;
 }
 
 #ddd {
-    width: 10vw;
+    width: 5vw !important;
+    margin-left: 13.5px !important;
+    border: 0 !important;
+    padding: 10px !important;
 }
 
+#ddd,
+input[type=tel],
 input[type=text],
 input[type=email] {
     margin-left: 25px;
     height: 2.4em;
-    width: 68%;
+    width: 20vw;
     border-radius: 4px;
     background-color: rgb(231, 228, 228);
     border: 0;
@@ -50,8 +55,10 @@ input[type=email] {
     cursor: pointer;
 }
 
-
+input[type=tel] {
+    margin-left: -2px;
+}
 
 input[type=checkbox] {
-    display: block;
+    display: inline-block;
 }
