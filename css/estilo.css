@@ -20,6 +20,10 @@ h1 {
     background-color: rgb(189, 192, 191);
 }
 
+.caixinha {
+    margin-left: 25px;
+}
+
 /* Campos do form */
 label {
     display: block;
@@ -42,6 +46,7 @@ label {
 
 #ddd,
 input[type=tel],
+input[type=password],
 input[type=text],
 input[type=email] {
     margin-left: 25px;
