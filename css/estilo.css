@@ -71,6 +71,11 @@ label {
     cursor: pointer;
 }
 
+input[type=text], 
+input[type=email] {
+    
+}
+
 input[type=tel] {
     margin-left: -2px;
     display: inline;
