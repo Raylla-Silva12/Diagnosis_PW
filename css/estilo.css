@@ -5,7 +5,11 @@
     padding: 0;
 }
 
-/* Título e Subtítulo */
+body {
+    background-color: rgb(255, 242, 254);
+}
+
+/* Tí­tulo e Subtítulo */
 
 h1 {
     text-align: center;
@@ -13,12 +17,12 @@ h1 {
 }
 
 h2 {
-    margin: 25px;
+    margin: 30px 0px 30px;
 }
 
 /* Form content */
 
-.container-fluid {
+.container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -27,18 +31,23 @@ h2 {
     align-items: center;
 }
 
-.col-md-10 {
-    padding: 10px;
-    margin: 30px;
-    border-radius: 5px;
+.row {
+    margin: 20px 0px 20px 0px;
+    width: 98.5%;
+    height: 99%;
+    background-color: rgb(221, 237, 250);
+    border: 3px dashed rgb(255, 142, 227);
+    border-radius: 10px;
 }
 
 #contato {
     float: left;
+    width: 19%;
 }
 
-.caixinha {
-    margin-left: 25px;
+#contato2 {
+    float: right;
+    width: 79%;
 }
 
 /* Campos do form */
@@ -47,41 +56,60 @@ label {
     display: block;
     margin-bottom: 0.9rem;
     font-size: medium;
-    margin-left: 25px;
-    color: rgb(0, 0, 0);
+    color: rgb(54, 147, 209);
 }
 
 .label-checkbox, .label-radio {
     display: inline-block;
 }
 
-#ddd {
-    width: 5vw !important;
-}
-
-#ddd, select, input[type=tel], input[type=password], input[type=text], input[type=email] {
-    margin-left: 25px;
+select, 
+input[type=number], 
+input[type=password], 
+input[type=text], 
+input[type=email] {
     height: 2.4em;
-    width: 20vw;
+    width: 100%;
     border-radius: 4px;
-    background-color: rgb(231, 228, 228);
-    border: 0;
+    background-color: rgb(119, 198, 243);
+    border: rgb(255, 142, 227) 2px solid;
     padding: 10px;
     margin-right: 20px;
     cursor: pointer;
 }
 
-input[type=text], 
-input[type=email] {
-    
+input:hover, select:hover, #ddd:hover {
+    border: rgb(240, 8, 182) 2px solid;
 }
 
-input[type=tel] {
-    margin-left: -2px;
-    display: inline;
+input[type=number] {
+    margin-left: -1px;
 }
 
 input[type=checkbox],
 input[type=radio] {
     display: inline-block;
 }
+
+select {
+    height: 10vh !important;
+}
+
+#ddd, label[for=ddd] {
+    width: 100% !important;
+}
+
+#telefone, label[for=telefone] {
+    width: 100% !important;
+    
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
