@@ -99,7 +99,7 @@
                     <!-- Botões -->
 
                     <div class="mt-5 mb-5">
-                        <button class="btn btn-block bg-primary text-white" name="avancar" type="submit">Confirmar</button>
+                        <button class="btn btn-block bg-primary text-white" name="avancar" onclick="cadUsuario()" type="submit">Confirmar</button>
                     </div>
                 </div>
 

@@ -40,9 +40,14 @@
                 if (isset($_GET["corrigir"])) {
                     header('Location: corrigir.php');
                 }
+
+                if (isset($_GET["confirmar"])) {
+                    header('Location: final.html');
+                }
                 ?>
-                <form action="comprovante.php" method="GET">
-                    <input type="submit" name="confirmar" value="Confirmar">
+
+                <form action="conexao.php" method="GET">
+                    <input type="submit" name="confirmar" onclick="cadUsuario()" value="Confirmar">
                     <input type="submit" name="corrigir" value="Corrigir">
                 </form>
 </body>

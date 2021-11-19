@@ -1,4 +1,18 @@
 <?php
+session_start();
+header('Location: comprovante.php');
+
+$user = 'root';
+$senha = 'usbw';
+$servidor = 'localhost';
+$banco = 'bd_imobiliaria';
+$con = new mysqli($servidor, $user, $senha, $banco);
+
+echo "Connected successfully";
+
+$sql = "INSERT INTO tb_imobiliaria VALUES (null,'$nome', '$email', '$ddd', '$telefone', '$senha', '$selecao', '$select', '$tipo')";
+$resultado = $GLOBALS['con']->query($sql);
+
     if(isset($_GET['nome'])){
         $nome = $_GET['nome'];
         $email = $_GET['email'];
@@ -18,9 +32,9 @@
 
     }
 
-    session_start();
-
     $_SESSION['tipo'] = $_GET['tipo'];
 
-    header('Location: comprovante.php');
-?>  
+   
+
+    
+
