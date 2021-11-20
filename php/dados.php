@@ -13,14 +13,14 @@ echo "Connected successfully";
 $sql = "INSERT INTO tb_imobiliaria VALUES (null,'$nome', '$email', '$ddd', '$telefone', '$senha', '$selecao', '$select', '$tipo')";
 $resultado = $GLOBALS['con']->query($sql);
 
-    if(isset($_GET['nome'])){
-        $nome = $_GET['nome'];
-        $email = $_GET['email'];
-        $ddd = $_GET['ddd'];
-        $senha = $_GET['senha'];
-        $selecao = $_GET['selecao'];
-        $select = $_GET['select'];
-        $telefone = $_GET['telefone'];
+    if(isset($_POST['nome'])){
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $ddd = $_POST['ddd'];
+        $senha = $_POST['senha'];
+        $selecao = $_POST['selecao'];
+        $select = $_POST['select'];
+        $telefone = $_POST['telefone'];
 
         setcookie ('nome', $nome, time()+3600);
         setcookie ('email', $email, time()+3600);
@@ -32,7 +32,7 @@ $resultado = $GLOBALS['con']->query($sql);
 
     }
 
-    $_SESSION['tipo'] = $_GET['tipo'];
+    $_SESSION['tipo'] = $_POST['tipo'];
 
    
 

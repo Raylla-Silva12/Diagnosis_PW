@@ -17,7 +17,7 @@
 
     <div class="container">
         <div class="row">
-            <form method="GET" action="final.html">
+            <form method="POST" action="final.html">
 
                 <!-- Conteúdo -->
 
