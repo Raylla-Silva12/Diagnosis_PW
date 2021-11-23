@@ -36,6 +36,8 @@
                 for ($i = 0; $i < count($tipo); $i++) {
                     echo $tipo[$i] . ' - ';
                 }
+                
+                <!-- Redirecionamento -->
 
                 if (isset($_GET["confirmar"])) {
                     header('Location: final.html');
