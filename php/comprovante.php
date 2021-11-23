@@ -42,7 +42,7 @@
                 }
 
                 if (isset($_GET["corrigir"])) {
-                    header('Location: final.html');
+                    header('Location: corrigir.php');
                 }
 
                
