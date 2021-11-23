@@ -2,7 +2,7 @@ CREATE DATABASE db_imobiliaria;
 USE db_imobiliaria;
 
 CREATE TABLE tb_imobiliaria (
-    cd_cliente INT NOT NULL PRIMARY KEY,
+    cd_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nm_cliente VARCHAR(45),
     ds_email VARCHAR(35),
     cd_ddd INT(2),
