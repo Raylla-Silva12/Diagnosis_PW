@@ -37,17 +37,19 @@
                     echo $tipo[$i] . ' - ';
                 }
 
-                if (isset($_POST["corrigir"])) {
-                    header('Location: corrigir.php');
-                }
-
-                if (isset($_POST["confirmar"])) {
+                if (isset($_GET["confirmar"])) {
                     header('Location: final.html');
                 }
+
+                if (isset($_GET["corrigir"])) {
+                    header('Location: final.html');
+                }
+
+               
                 ?>
 
-                <form action="conexao.php" method="POST">
-                    <input type="submit" name="confirmar" onclick="cadUsuario()" value="Confirmar">
+                <form action="dados.php" method="GET">
+                    <input type="submit" name="confirmar" value="Confirmar">
                     <input type="submit" name="corrigir" value="Corrigir">
                 </form>
 </body>

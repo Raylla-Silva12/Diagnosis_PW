@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $user = 'root';
 $senha = 'usbw';
@@ -8,7 +9,6 @@ $con = new mysqli($servidor, $user, $senha, $banco);
 
 echo "Connected successfully";
 
-    $sql = "INSERT INTO tb_imobiliaria VALUES (null,'$nome', '$email', '$ddd', '$telefone', '$senha', '$selecao', '$select', '$tipo')";
-    $resultado = mysqli_query($con, $sql);
-    $resultado = $GLOBALS['con']->query($sql);
-?>
+    $sql = 'insert into tb_imobiliaria values (null, "'.$_COOKIE['nome'].'", "'.$_COOKIE['$email'].'", "'.$_COOKIE['$ddd'].'", "'.$_COOKIE['$telefone'].'", "'.$_COOKIE['$senha'].'", "'.$_COOKIE['$selecao'].'", "'.$_COOKIE['$select'].'", "'.$_COOKIE['$tipo'].'")';
+    
+
