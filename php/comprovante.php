@@ -37,7 +37,7 @@
                     echo $tipo[$i] . ' - ';
                 }
                 
-                <!-- Redirecionamento -->
+                /* Redirecionamento */
 
                 if (isset($_GET["confirmar"])) {
                     header('Location: final.html');
